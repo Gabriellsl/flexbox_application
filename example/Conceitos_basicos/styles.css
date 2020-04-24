@@ -1,0 +1,44 @@
+html,
+body,
+#app{
+    height: 100%;
+    margin: 0;
+}
+
+#app{
+    display: flex;                        /*Colocar display flex no componente pai*/
+    /*flex-direction: column;*/           /* Direção do flex, cow ou column */
+
+    /*align-items: center;*/
+    /*justify-content: space-between;*/       /*'Se flex-direction: row centraliza no meio das colunas'*/
+    /*align-content: space-between; *7        /* alinha os elementos quando eles estão mais de 1 linha quebrada */
+    /*flex-wrap: wrap;  */                    /* quebra linha quando o component não é comportado na linha atual */
+    /*flex-wrap: wrap-reverse;*/          /* Faz com o conteúdo de quebra seja apresentado inversamente */
+}
+
+
+.box{
+    width: 150px;
+    height: 60px;
+    background-color: #f00;
+    margin: 5px;
+    /*flex-grow: 1;*/                      /*O componente pode se expandir para caber no container*/
+    /*flex-shrink: 0; */                   /* Poem rolagem e mantem o tamanho do componente*/
+    /*flex: 1;*/                           /*flex-grow    ---   flex shrink*/
+    
+}
+
+.red{
+    background-color: #f00;
+    order: 2;                              /*Ordena a apresentação do componente de acordo com o order*/
+}
+
+.green{
+    background-color: #0F0;              /*Ordena a apresentação do componente de acordo com o order*/
+    order: 1;
+}
+
+.blue{
+    background-color: #00F;              /*Ordena a apresentação do componente de acordo com o order*/
+    order: 3;
+}
